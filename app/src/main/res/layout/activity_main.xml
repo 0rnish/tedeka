@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvFWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:maxWidth="350dp"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="@+id/tvAtasozu"
+        app:layout_constraintStart_toStartOf="@+id/tvAtasozu"
+        app:layout_constraintTop_toBottomOf="@+id/tvAtasozu" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:background="#ffbd45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="253dp"
+        android:layout_height="58dp"
+        android:background="@drawable/rounded_edittext"
+        android:ems="10"
+        android:hint="Kelime Girin"
+        android:inputType="textPersonName"
+        android:paddingStart="10dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="118dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_custom"
+        android:text="Ara"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/etInput" />
+
+    <TextView
+        android:id="@+id/tvAnlam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Anlamı"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/etInput"
+        app:layout_constraintStart_toStartOf="@+id/etInput"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+
+    <TextView
+        android:id="@+id/tvBirlesikler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Birleşikler"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/etInput"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/etInput"
+        app:layout_constraintTop_toBottomOf="@+id/tvMeaning" />
+
+    <TextView
+        android:id="@+id/tvAtasozu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Bulunduğu Atasözleri, Deyimler ya da Birleşik Fiiller"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/etInput"
+        app:layout_constraintStart_toStartOf="@+id/etInput"
+        app:layout_constraintTop_toBottomOf="@+id/tvMixed" />
+
+    <TextView
+        android:id="@+id/tvMeaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:maxWidth="350dp"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="@+id/tvAnlam"
+        app:layout_constraintStart_toStartOf="@+id/tvAnlam"
+        app:layout_constraintTop_toBottomOf="@+id/tvAnlam" />
+
+    <TextView
+        android:id="@+id/tvMixed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:maxWidth="350dp"
+        android:text="--"
+        app:layout_constraintEnd_toEndOf="@+id/tvBirlesikler"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="@+id/tvBirlesikler"
+        app:layout_constraintTop_toBottomOf="@+id/tvBirlesikler" />
+
+    <TextView
+        android:id="@+id/tvFWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:maxWidth="350dp"
+        android:text="---"
+        app:layout_constraintEnd_toEndOf="@+id/tvAtasozu"
+        app:layout_constraintStart_toStartOf="@+id/tvAtasozu"
+        app:layout_constraintTop_toBottomOf="@+id/tvAtasozu"
+        tools:ignore="DuplicateIds" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
